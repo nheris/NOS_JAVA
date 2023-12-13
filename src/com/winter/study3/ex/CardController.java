@@ -43,13 +43,13 @@ public class CardController {
 				cv.detail(cards);
 			}else if(select == 3) {
 				System.out.println("추가");
-				cm.addCard(cards);
+				cards = cm.addCard(cards);
 			}else if(select == 4) {
 				System.out.println("수정");
 				
 			}else if(select == 5) {
 				System.out.println("삭제");
-				cm.DeleteCard(cards);
+				cards = cm.DeleteCard(cards);
 			}else {
 				System.out.println("종료합니다.");
 				break;
