@@ -60,7 +60,9 @@ public class Ex2Main {
 		}
 		
 		if(sum==numstr.charAt(numstr.length()-1)) {
-			
+			System.out.println("타당한 주민등록번호입니다.");
+		}else {
+			System.out.println("타당하지않은 주민등록번호입니다.");
 		}
 		
 		//1.남자여자 구별
