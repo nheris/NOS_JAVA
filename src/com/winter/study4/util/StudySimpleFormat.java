@@ -16,7 +16,16 @@ public class StudySimpleFormat {
 		sd.applyPattern("yyyy-MM-dd");//2023-12-18
 		
 		String d= "2020-12-24"; //문자열 -> 날짜
-		//여기안씀
+		
+		Date date=null;
+		try {
+			date = sd.parse(d);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println(date);
 		
 	}
 }

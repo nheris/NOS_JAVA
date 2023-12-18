@@ -34,12 +34,18 @@ public class Study5Main {
 		arr[3] =10;
 		//new ArrayIndexOutOfBoundsException(); 해당 객체 자동 만들어짐
 		//https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ArrayIndexOutOfBoundsException.html
-		}catch() {
+}catch (InputMismatchException e) {
 			
-		}catch() {
+			// TODO: handle exception
+		}catch (ArrayIndexOutOfBoundsException e) {
+			// TODO: handle exception
 			
-		}catch() {
-			
+		}catch (RuntimeException e) {
+			// TODO: handle exception
+		}catch (Exception e) {
+			// TODO: handle exception
+		}catch (Throwable e) {
+			// TODO: handle exception
 		}finally {//예외 발생하든말든 무조건 실행
 			
 			
