@@ -4,14 +4,9 @@ public class Ex1Main {
 
 	public static void main(String[] args) {
 		
-		StudentService ss = new StudentService();
+		new StudentController().start();
 		
-		ss.init();
-		
-		
-		
-		
-		
+
 	}
 
 }

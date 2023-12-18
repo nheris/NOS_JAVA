@@ -21,9 +21,9 @@ public class StudyList2 {
 		
 		//다형성은 참조형
 		//타입의 안정성
-		int n = (Integer)ar.get(0);
+		int nn = (Integer)ar.get(0);
 		String str = (String)ar.get(1);
-		Boolean str = (Boolean)ar.get(2);
+		Boolean c = (Boolean)ar.get(2);
 	}
 
 }

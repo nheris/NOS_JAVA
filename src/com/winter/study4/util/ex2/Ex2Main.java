@@ -10,6 +10,8 @@ public class Ex2Main {
 //		System.out.println(num);
 		
 		StudySetInfo ss = new StudySetInfo();
+		ss.ex0();
+		System.out.println("-----------------");
 		ss.ex1();
 		System.out.println("-----------------");
 		ss.ex2();

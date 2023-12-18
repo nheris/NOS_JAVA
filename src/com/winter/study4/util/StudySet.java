@@ -1,6 +1,9 @@
 package com.winter.study4.util;
 
+import java.util.Collection;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 import java.util.Iterator;
 
 public class StudySet {
@@ -20,11 +23,11 @@ public class StudySet {
 		Iterator<String> it =  hs.iterator();
 		
 		while(it.hasNext()) {
-			
+			String v = it.next();
+			System.out.println(v);
 		}
+		
 		System.out.println(hs.iterator());
 		
-		//뭔소리고!! 뭔소리냐구!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		//례????????
 	}
 }

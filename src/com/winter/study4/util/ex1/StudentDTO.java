@@ -5,14 +5,12 @@ public class StudentDTO {
 	//VO Value Object
 	private String name;
 	private int num;
-	private int liter;
-	private int	eng;
+	private int kor;
+	private int eng;
 	private int math;
-	private int sum;
-	public void setAvg(int avg) {
-		this.avg = avg;
-	}
-	private int avg;
+	private int total;
+	private double avg;
+	
 	public String getName() {
 		return name;
 	}
@@ -25,11 +23,11 @@ public class StudentDTO {
 	public void setNum(int num) {
 		this.num = num;
 	}
-	public int getLiter() {
-		return liter;
+	public int getKor() {
+		return kor;
 	}
-	public void setLiter(int lit) {
-		this.liter = lit;
+	public void setKor(int kor) {
+		this.kor = kor;
 	}
 	public int getEng() {
 		return eng;
@@ -43,14 +41,18 @@ public class StudentDTO {
 	public void setMath(int math) {
 		this.math = math;
 	}
-	public int getSum() {
-		return sum;
+	public int getTotal() {
+		return total;
 	}
-	public void setSum(int sum) {
-		this.sum = sum;
+	public void setTotal(int total) {
+		this.total = total;
 	}
-	public int getAvg() {
+	public double getAvg() {
 		return avg;
 	}
-
+	public void setAvg(double avg) {
+		this.avg = avg;
+	}
+	
+	
 }

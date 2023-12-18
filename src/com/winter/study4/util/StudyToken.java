@@ -22,7 +22,7 @@ public class StudyToken {
 			
 			WeatherDate weatherDate = new WeatherDate();
 			weatherDate.setCity(st.nextToken());
-			weatherDate.setGion(str);
+			weatherDate.setGion(st.nextToken());
 			weatherDate.setInfo(str);
 			weatherDate.setHum(str);
 			ar.add(weatherDate);
