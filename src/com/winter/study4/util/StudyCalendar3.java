@@ -22,7 +22,7 @@ public class StudyCalendar3 {
 		calendar.add(Calendar.DATE, 3);//여기 다름!!
 		System.out.println(calendar.getTime());
 		
-		//UUID
+		//UUID 쓸거라 알아두래
 		String n = UUID.randomUUID().toString();
 		System.out.println(n);
 	}
