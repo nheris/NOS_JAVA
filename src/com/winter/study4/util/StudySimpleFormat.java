@@ -1,7 +1,9 @@
 package com.winter.study4.util;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 public class StudySimpleFormat {
 	public static void main(String[] args) {
@@ -18,6 +20,7 @@ public class StudySimpleFormat {
 		String d= "2020-12-24"; //문자열 -> 날짜
 		
 		Date date=null;
+		
 		try {
 			date = sd.parse(d);
 		} catch (ParseException e) {

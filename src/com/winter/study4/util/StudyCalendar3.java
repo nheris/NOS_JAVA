@@ -15,8 +15,8 @@ public class StudyCalendar3 {
 		System.out.println(d);
 		System.out.println(calendar.getTime());
 		
-		calendar.set(2023,1,31);
-		calendar.roll(Calendar.DATE, 3);
+		calendar.set(2023,11,31);
+//		calendar.roll(Calendar.DATE, 3);
 		System.out.println(calendar.getTime());
 		
 		calendar.add(Calendar.DATE, 3);//여기 다름!!
