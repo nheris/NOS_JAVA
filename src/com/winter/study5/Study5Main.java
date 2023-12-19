@@ -21,7 +21,7 @@ public class Study5Main {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("숫자입력");//first 입력
 		try {
-			int num = sc.nextInt();//콘솔에 라이브러리명은 건너띄고 내가 만든건만 보래
+			int num = sc.nextInt();//에러메세지 라이브러리명은 건너띄고 내가 만든건만 보래
 			//throw new InputMismatchException();//만들어진거 던짐
 //		}catch(InputMismatchException e) { //던진타입 매개변수
 //			//모든예외 부모 object 참고.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/InputMismatchException.html
@@ -34,8 +34,9 @@ public class Study5Main {
 		arr[3] =10;
 		//new ArrayIndexOutOfBoundsException(); 해당 객체 자동 만들어짐
 		//https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ArrayIndexOutOfBoundsException.html
-}catch (InputMismatchException e) {
-			
+		}catch (InputMismatchException e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
 			// TODO: handle exception
 		}catch (ArrayIndexOutOfBoundsException e) {
 			// TODO: handle exception
