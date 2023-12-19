@@ -1,18 +1,44 @@
 package com.winter.study6;
-
+//while 안됨지금!!!
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class StudyFile {
+	public void f4() {
+		//읽어오기
+		File file = new File("");
+		
+		//연결된 순서의 역순으로 해체
+		
+	}
+	
 	public void f3() throws IOException  {
-		File file = new File("c:\\study\\test.txt");
+		Scanner sc = new Scanner(System.in);
 		
-		FileWriter fw = new FileWriter(file, true); //false(디폴트)덮어씌움, true 이어서
+//		File file = new File("c:\\study\\test.txt");
+//		File file = new File("c:\\study\\test1.txt");
+		File file = new File("c:\\study\\test2.txt");
 		
-		fw.write("hi");//버퍼에 담았다가 보낼건데 버퍼 꽉차야 상대방쪽으로 밈.그래서 잘안쓴대
+		FileWriter fw = new FileWriter(file, true); //false(디폴트)덮어씌움, true 이어쓰기
+		
+		
+		while (true) {
+			System.out.println("입력하세요");
+			fw.write(sc.next());//exit,Exit,eXit 다 될수있게
+			if(sc.next().toUpperCase().equals("exit")) {
+				break;
+			}
+//		fw.write("hello");//버퍼에 담았다가 보낼건데 버퍼 꽉차야 상대방쪽으로 밈.그래서 잘안쓴대
+//		fw.write("winter\n\r");
+		}
+		
 		//강제 버퍼 밀거임
 		fw.flush();
+		
+		//파일자원썻으면 꺼줘야함
+		fw.close();
 		
 	}
 	

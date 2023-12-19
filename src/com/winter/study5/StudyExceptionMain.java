@@ -4,7 +4,12 @@ public class StudyExceptionMain {
 
 	public static void main(String[] args) {
 		StudyException se = new StudyException();
-		se.t1();
+		try {
+			se.t2();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 

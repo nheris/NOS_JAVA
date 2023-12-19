@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class StudyException {
-	public void t2() thorws Exception{
+	public void t2() throws Exception{
 		//유치원생
 		//0~99
 		int n1 = 56;
@@ -17,7 +17,7 @@ public class StudyException {
 			throw new MyException("그런 숫자는 모른다.");
 		}
 		if(r2<0) {
-			throw new MyException("0보다 작은 숫자는 뭐야?");
+			throw new Exception("0보다 작은 숫자는 뭐야?");
 		}
 		System.out.println(r1);
 		System.out.println(r2);
