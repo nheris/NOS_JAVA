@@ -19,7 +19,7 @@ public class StudyCalendar3 {
 //		calendar.roll(Calendar.DATE, 3);
 		System.out.println(calendar.getTime());
 		
-		calendar.add(Calendar.DATE, 3);//여기 다름!!
+		calendar.add(Calendar.DATE, 3);
 		System.out.println(calendar.getTime());
 		
 		//UUID 쓸거라 알아두래

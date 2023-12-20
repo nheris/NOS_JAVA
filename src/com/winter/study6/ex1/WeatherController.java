@@ -57,7 +57,7 @@ public class WeatherController {
 				}else if(select==4) {
 					boolean flag = weatherDAO.delete(ar, sc);
 				}else if(select==5) {
-					
+					weatherDAO.save(ar);
 				}else {
 					System.out.println("종료합니다.");
 					break;
