@@ -28,6 +28,7 @@ public class StudyFile {
 	}
 	
 	public void f3() throws IOException  {
+		//쓰기
 		Scanner sc = new Scanner(System.in);
 		
 //		File file = new File("c:\\study\\test.txt");
