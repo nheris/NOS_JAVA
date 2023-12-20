@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class WeatherController {
-	
+	//q비번 알아내는중...
 	//의존적이다 Dependency
 	//주입     Injection
 	//의존성 주입(DI)
