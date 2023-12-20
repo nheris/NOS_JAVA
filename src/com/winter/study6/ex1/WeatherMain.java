@@ -1,19 +1,23 @@
 package com.winter.study6.ex1;
 
-import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 public class WeatherMain {
 
-	public static void main(String[] args) throws FileNotFoundException {
-		// TODO Auto-generated method stub
-		WeatherDAO wd = new WeatherDAO();
+	public static void main(String[] args) {
+		WeatherDAO dao = new WeatherDAO();
 		try {
-			wd.getWheathers();
+			ArrayList<WeatherDTO> ar = dao.getWeathers();
+			for(WeatherDTO weatherDTO:ar) {
+				System.out.println(weatherDTO.getCity());
+				System.out.println(weatherDTO.getHum());
+				System.out.println("==================");
+			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		wd.init();
+
 	}
 
 }
