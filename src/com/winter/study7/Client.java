@@ -30,18 +30,19 @@ public class Client {
 			
 		//ouput
 		System.out.println("서버로 보낼 메세지 입력");
-		String m = sc.next(); //nextLine()띄어쓰기 포함
+		String m = sc.next(); //nextLine()띄어쓰기 포함 문자열밖에 안됨.
 		
-		String result = m.toUpperCase();
-		if (result.equals("EXIT")){
-			break;
-		}
 		
 		os = socket.getOutputStream(); //0,1 처리
 		ow = new OutputStreamWriter(os);//문자로 다룸
 		bw = new BufferedWriter(ow);//문자열로 
 		bw.write(m+"\n\r");
 		bw.flush();
+		
+		String result = m.toUpperCase();
+		if (result.equals("EXIT")){
+			break;
+		}
 		
 		//서버메세지 수신
 		is = socket.getInputStream();
