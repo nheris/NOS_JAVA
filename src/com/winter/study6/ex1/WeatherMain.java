@@ -13,7 +13,8 @@ public class WeatherMain {
 //				System.out.println(weatherDTO.getHum());
 //				System.out.println("==================");
 			
-			new WeatherController().start();
+//			new WeatherController().start();
+			new WeatherDAO().getWeathers();
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
